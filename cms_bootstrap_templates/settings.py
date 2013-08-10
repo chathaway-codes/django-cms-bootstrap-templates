@@ -152,7 +152,7 @@ INSTALLED_APPS = (
     'menus',
     'south',
     'sekizai',
-    'django_bootstrap',
+    'bootstrap_static_files',
 
     'cms.plugins.text',
 )
