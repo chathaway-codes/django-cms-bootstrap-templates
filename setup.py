@@ -29,4 +29,5 @@ setup(
     long_description=read('README.md'),
     install_requires = read_requirements('libraries.txt'),
     test_suite = "dummy",
+    include_package_data=True,
 )
