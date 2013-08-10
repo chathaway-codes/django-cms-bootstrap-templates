@@ -2,7 +2,7 @@ Django>=1.5.1
 South==0.8.2
 argparse==1.2.1
 distribute==0.6.34
-django-bootstrap==2.3.1
+django-bootstrap-static-files==3.0.0-wip
 django-classy-tags==0.4
 django-cms==2.4.2
 django-mptt==0.5.2
