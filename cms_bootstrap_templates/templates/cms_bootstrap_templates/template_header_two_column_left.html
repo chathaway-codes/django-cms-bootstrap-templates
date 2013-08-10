@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load cms_tags sekizai_tags %}
+
+{% block content %}
+        <div class="container">
+            <div class="header">
+                <div class="page-header">{% placeholder header %}</div>
+            </div>
+            <div class="wrapper">
+                <div class="column-left">
+                    {% placeholder left_column %}
+                </div>
+                <div class="column-right">
+                    {% placeholder right_column %}
+                </div>
+            </div>
+        </div>
+{% addtoblock "less" %}
+    <link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}cms_bootstrap_templates/less/template_header_two_columns_left.less" />
+{% endaddtoblock %}
+
+{% endblock %}
