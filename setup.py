@@ -3,6 +3,7 @@ import os, sys
 
 try:
     from setuptools import setup
+    from setuptools import find_packages
 except:
     from distutils.core import setup
 
@@ -19,13 +20,13 @@ def read_requirements(fname):
 
 setup(
     zip_safe = False,
-    name = "django-cms-bootstrap-templates",
+    name = "cms-bootstrap-templates",
     version = "1.1.0",
     author = "Charles Hathaway",
     author_email = "chathaway@logrit.com",
     description = "This package provides a variety of Django CMS templates designed using Twitter Bootstrap",
     keywords = "",
-    packages=['cms_bootstrap_templates'],
+    packages=find_packages(),
     long_description=read('README.md'),
     install_requires = read_requirements('libraries.txt'),
     test_suite = "dummy",
