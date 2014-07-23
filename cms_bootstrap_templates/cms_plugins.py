@@ -1,6 +1,6 @@
 from cms.plugin_pool import plugin_pool
-from cms.plugins.text.cms_plugins import TextPlugin
-from cms.plugins.picture.cms_plugins import PicturePlugin
+from djangocms_text_ckeditor.cms_plugins import TextPlugin
+from djangocms_picture.cms_plugins import PicturePlugin
 from django.utils.translation import ugettext_lazy as _
 
 class JumbotronPlugin(TextPlugin):

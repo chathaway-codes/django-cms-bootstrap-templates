@@ -38,7 +38,7 @@ TIME_ZONE = 'America/New_York'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 SITE_ID = 1
 
@@ -147,22 +147,19 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'cms_bootstrap_templates',
+    'djangocms_text_ckeditor',
     'cms',
     'mptt',
     'menus',
     'south',
     'sekizai',
-    'bootstrap_static_files',
+    'bootstrap',
 
-    'cms.plugins.text',
+    'djangocms_picture',
 )
 
-LANGUAGES = [
-    ('en', 'English'),
-]
-
 CMS_TEMPLATES = (
-    ('template_1.html', 'Template One'),
+    ('cms_bootstrap_templates/template_one_column.html', 'One columns'),
     ('cms_bootstrap_templates/template_two_column.html', 'Two columns'),
     ('cms_bootstrap_templates/template_three_column.html', 'Three columns'),
     ('cms_bootstrap_templates/template_header_two_column.html', 'Two columns with a header'),

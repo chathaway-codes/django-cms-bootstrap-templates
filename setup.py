@@ -20,7 +20,7 @@ def read_requirements(fname):
 setup(
     zip_safe = False,
     name = "django-cms-bootstrap-templates",
-    version = "1.0.0",
+    version = "1.1.0",
     author = "Charles Hathaway",
     author_email = "chathaway@logrit.com",
     description = "This package provides a variety of Django CMS templates designed using Twitter Bootstrap",
