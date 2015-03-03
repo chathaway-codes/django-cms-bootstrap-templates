@@ -15,8 +15,9 @@
                 </div>
             </div>
         </div>
-{% addtoblock "css" %}
+{% block extra_style %}
+    <!-- Temporary work around for the less issue -->
     <link rel="stylesheet" type="text/less" media="all" href="{{ STATIC_URL }}cms_bootstrap_templates/less/template_header_two_columns.less" />
-{% endaddtoblock %}
+{% endblock %}
 
 {% endblock %}
